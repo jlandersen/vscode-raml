@@ -1,0 +1,27 @@
+{
+	"name": "raml",
+	"displayName": "RAML",
+	"description": "RAML syntax highlighting for Visual Studio Code",
+	"version": "1.0.1",
+	"publisher": "jeppeandersen",
+    "icon": "assets/icon.png",
+	"engines": {
+		"vscode": "^0.10.6"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "raml",
+			"aliases": ["RAML", "raml"],
+			"extensions": [".raml"],
+			"configuration": "./raml.configuration.json"
+		}],
+		"grammars": [{
+			"language": "raml",
+			"scopeName": "source.raml",
+			"path": "./syntaxes/raml.tmLanguage"
+		}]
+	}
+}
